@@ -55,11 +55,7 @@ void traversal(List First){
         cout << "List kosong\n";
     }
     else{
-        pBantu = First;
-        cout << "----------------------------------------------\n";
-        cout << "NPM\t\t" << "Nama\t\t" << "IPK\t\n";
-        cout << "----------------------------------------------\n";
-        while(pBantu != NULL){
+        pBantu = First;while(pBantu != NULL){
             cout << pBantu->npm << "\t" << pBantu->nama << "\t" << pBantu->ipk << endl;
             pBantu = pBantu->next;
         }
@@ -75,6 +71,11 @@ int main()
 
     banyakData (n);
     createList(l);
+
+
+    cout << "----------------------------------------------\n";
+    cout << "NPM\t\t" << "Nama\t\t" << "IPK\t\n";
+    cout << "----------------------------------------------\n";
 
     for(int i=0;i<n;i++){
         createElement(p);
